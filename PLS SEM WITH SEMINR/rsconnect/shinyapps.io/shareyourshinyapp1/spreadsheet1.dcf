@@ -1,0 +1,13 @@
+name: spreadsheet1
+title: spreadsheet1
+username:
+account: shareyourshinyapp1
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8350361
+bundleId: 6861174
+url: https://shareyourshinyapp1.shinyapps.io/spreadsheet1/
+when: 1676727286.21811
+lastSyncTime: 1676727286.21812
+asMultiple: FALSE
+asStatic: FALSE

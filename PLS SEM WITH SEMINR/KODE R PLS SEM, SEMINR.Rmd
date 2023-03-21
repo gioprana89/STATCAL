@@ -36,6 +36,10 @@ corp_rep_mm <- constructs(
   composite("DK", multi_items("DK", 1:3)),
   composite("KK", multi_items("KK", 1:4)))
 
+
+
+corp_rep_mm
+
 ```
 
 

@@ -1758,13 +1758,16 @@ display: none;
 <pre class="r"><code>
 list.files()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwifiRjb250b2ggZGF0YS54bHN4XCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcblsyXSBcImNvbnRvaCBkYXRhLnhsc3hcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5bM10gXCJkYXQudHh0XCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuWzRdIFwiS09ERSBSIFBMUyBTRU0sIFNFTUlOUi5uYi5odG1sXCIgICAgICAgICAgICAgICAgICAgICAgICBcbls1XSBcIktPREUgUiBQTFMgU0VNLCBTRU1JTlIuUm1kXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5bNl0gXCJQYXJ0aWFsIExlYXN0IFNxdWFyZXMgU3RydWN0dXJhbCBFcXVhdGlvbiBNb2RlbGluZy5wZGZcIlxuIn0= -->
-<pre><code>[1] &quot;~$contoh data.xlsx&quot;                                    
-[2] &quot;contoh data.xlsx&quot;                                      
-[3] &quot;dat.txt&quot;                                               
-[4] &quot;KODE R PLS SEM, SEMINR.nb.html&quot;                        
-[5] &quot;KODE R PLS SEM, SEMINR.Rmd&quot;                            
-[6] &quot;Partial Least Squares Structural Equation Modeling.pdf&quot;</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiY29udG9oIGRhdGEueGxzeFwiICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcblsyXSBcIktPREUgUiBQTFMgU0VNLCBTRU1JTlIubmIuaHRtbFwiICAgICAgICAgICAgICAgICAgICAgICAgXG5bM10gXCJLT0RFIFIgUExTIFNFTSwgU0VNSU5SLlJtZFwiICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuWzRdIFwibW9kdWxlXCIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbls1XSBcIlBhcnRpYWwgTGVhc3QgU3F1YXJlcyBTdHJ1Y3R1cmFsIEVxdWF0aW9uIE1vZGVsaW5nLnBkZlwiXG5bNl0gXCJyc2Nvbm5lY3RcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuWzddIFwic2VydmVyLnJcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbls4XSBcInVpLnJcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5bOV0gXCJ3d3dcIiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuIn0= -->
+<pre><code>[1] &quot;contoh data.xlsx&quot;                                      
+[2] &quot;KODE R PLS SEM, SEMINR.nb.html&quot;                        
+[3] &quot;KODE R PLS SEM, SEMINR.Rmd&quot;                            
+[4] &quot;module&quot;                                                
+[5] &quot;Partial Least Squares Structural Equation Modeling.pdf&quot;
+[6] &quot;rsconnect&quot;                                             
+[7] &quot;server.r&quot;                                              
+[8] &quot;ui.r&quot;                                                  
+[9] &quot;www&quot;                                                   </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1781,7 +1784,7 @@ dat &lt;- as.data.frame(dat)
 
 dat</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NzAsIm5jb2wiOjE1LCJzdW1tYXJ5Ijp7IkRlc2NyaXB0aW9uIjpbImRmIFs3MCDDlyAxNV0iXX19LCJyZGYiOiJINHNJQUFBQUFBQUFCdTFhVzI4U1FSUSs1YUl0U1F1SmZmREJCMk9NTVVhSVhOUjZMVzBwdlhBcnBpWjlSWXBLeEtVQkduM3NUL01uK1F1cUEzeXpDd09IbVZVb1dIY1M4cDN2ekprejUreCtPMndJN3pJbnlkQkppSWo4RlBENXlCOFVKZ1hmSDJlakd5UThnaXhSZ0ZhNitGMEUzUkpHV0h6V3hDZTcrWk42STAzQVpXQUV1QTY4RGJ3RHZBdThCN3dQZkFCOENId0VmQXlNQVo4QTQ4QUVNQWxNQVo4Q253R2ZBemVBTDRBdmdhK0FyNEZ2Z0crQm04QzB4SXMrYm9GdmdXK0RiNFB2Z08rQVo4QXo0THZndStCWjhDejRIdmdlK0Q3NFB2Z0IrQUg0SWZnaGVBNDhCNTRIejRNWHdBdmdSZkFpZUFtOEJINEVmcFFHU3YrUFBwWXhYOFo4dVQ5UDBJMnRDNGtSaFRObzY4MlFzK3ZWL1dqWUwrTkc5TDArT1k3TnI4U1AxTFBNN0tkYnA5WlBrL053MTJPa2ZuVWZZdnpNL2VPdUE1ZWZ2YzVrRDFlNmNhdVRhZWxHZDkwODNTajVJc3c4NTUreGJ1WjEza3hMTnl6M2RETitYMlVmeVVucVJwMVgrMUxubVQ3WStwWDFJMzFFSnZmaFZqZHU5YTNWamVrNXBYcytaTjJHOWJMbkpqRitYYitHY1NQMTBuQWMvYUZ1dVB5ZWJqUjVaZDJHOWVwMG96MWZGa3czM25samxtOVJkYVA3SHZ4YjNiRDN5ZE9OVWI1RjFjMjh6eHQxZm1xNklXWGU4TDFRZTcxTjd6L3pYbXlxUzdzK0d1ODNmZDdkNm9idDE2VytXTjJRUFR6ZGpNdHZxQnZ1L3R2MTBYai9ySFREY2s4M0UvUE4rN3pSbmU5cW51dW1HL2I1bWRIN0RWdXZYTy95L2NhdGJrYmlyK2ozbTZ2U2pVNm4vNXR1ZEhtbWZkNTR1ckhIa0c2MDM5Y0xwcHRwblRlZWJwZzRHby8wajU4MzEwVTNwcmc0dWhuNmcwWFFxbnl0dFlYUjNUWU1wNi9ZaEJVb2xJN2pBM1ppd0U3Qzl1ZHpjY2RNT09aQVFFcWFHU2MyNDhSbW5OaWNFNUJ6QW5LREFTbWxoNVZXODF0TTlySGFyZitpMzJsV2JiYmFxTFJsczlJWk9xMTBLckdQTGJGZXNFdGx5YzNtV2FmZXRNUWlYL2R2S0VGbDhWSkxjWVRQclc0bHA5SHE1M1ByU3pUVjNhQTMzUityc0xNRGRyaS9wZThYVWdXUjZrYk4rbFMzYXJMMlJ1VkRyUUd5SmpydU5SdzdhOVd0anV4RWVOdXhUck5Ua1hHaGFyTWhQYjNlNlBJMzRUVFU4bjBqQUFBPSJ9 -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NzAsIm5jb2wiOjE1LCJzdW1tYXJ5Ijp7IkRlc2NyaXB0aW9uIjpbImRmIFs3MCDDlyAxNV0iXX19LCJyZGYiOiJINHNJQUFBQUFBQUFCdTFhVzI4U1FSUSs1YUl0U1F1SmZmREJCMk9NTVVhSVhOUjZMVzBwdlhBcnBpWjlSWXBLeEtVQkduM3NUL01uK1F1cUEzeXpDd09IbVZVb1dIY1Q4cDN2ekprejUreCtPN3NoK3k1emtneWRoSWpJVHdHZmoveEJZVkx3L1hFMnVrSENJOGdTQldpbGk5OUYwQzFoaE1WdlRmeXlteitwZDZRSnVBeU1BTmVCdDRGM2dIZUI5NEQzZ1ErQUQ0R1BnSStCTWVBVFlCeVlBQ2FCS2VCVDREUGdjK0FHOEFYd0pmQVY4RFh3RGZBdGNCT1lsbmpSeHkzd0xmQnQ4RzN3SGZBZDhBeDRCbndYZkJjOEM1NEYzd1BmQTk4SDN3Yy9BRDhBUHdRL0JNK0I1OER6NEhud0FuZ0J2QWhlQkMrQmw4Q1B3SS9TUU9uLzBjY3l4c3NZTC9mSENicXhkU0V4b25BR2JiMFpjbmErdWg0TisyWGNpTDdYSjhleCtaWDRrWHFXbWZWMDg5VDZhWEllN255TTFLK3VRNHlmdVg3Y2VlRHlzK2VaN01PVmJ0enFaRnE2MFowM1R6ZEt2Z2d6enZsbnJKdDU3VGZUMGczTFBkMk1YMWRaUjNLU3VsSEgxYjdVY2FZUHRuNWwva2dma2NsOXVOV05XMzFyZFdPNlQrbnVEMW0zWWIzc3ZrbU1YOWV2WWR4SXZUUWNSMytvR3k2L3B4dE5YbG0zWWIwNjNXajNsd1hUamJmZm1PVmJWTjNvbm9OL3F4djJPbm02TWNxM3FMcVo5MzZqams5Tk42U01HNzRYYXMrMzZmVm4zb3ROZFduWFIrUDlwdmU3Vzkydy9iclVGNnNic2c5UE4rUHlHK3FHdS81MmZUVGVQeXZkc056VHpjUjg4OTV2ZFB1N211ZTY2WWE5ZjJiMGZzUFdLK2U3Zkw5eHE1dVIrQ3Y2LythcWRLUFQ2ZittRzEyZWFlODNubTdzWTBnMzJ1ZjFndWxtV3Z1TnB4c21qc1lqL2VQN3pYWFJqU2t1am02R1ByQUlXcFd2dGJZd3VzdUc0ZlFWbTdBQ2hkSnhmTUJPRE5oSjJQNThMdTZZQ2NjY0NFaEpNK1BFWnB6WWpCT2Jjd0p5VGtCdU1DQ2w5TERTYW42THlUNVd1L1ZmOUR2TnFzMVdHNVcyYkZZNlE2ZVZUaVgyc1NYbUMzYXBUTG5aUE92VW01YVk1T3QraGhKVUppKzFGRWY0M09wV2NocXRmajYzdmtTN0g0bUVlc1A5WXhWMmRzQU85NWYwL1VLcUlGTGRxRm1mNmxaTjF0Nm9mS2cxUU5aRXg3MkdZMmV0dXRXUm5RaHZPOVpwZGlveUxsUnROcVNuMXh0ZC9nWnMvbUZpZlNNQUFBPT0ifQ== -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["No"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["MOT1"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["MOT2"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["MOT3"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["LK1"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["LK2"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["LK3"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["LK4"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["DK1"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["DK2"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["DK3"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["KK1"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["KK2"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["KK3"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["KK4"],"name":[15],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"5","3":"5","4":"5","5":"2","6":"2","7":"2","8":"2","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"2","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"1","15":"5"},{"1":"3","2":"4","3":"4","4":"4","5":"4","6":"4","7":"4","8":"4","9":"4","10":"4","11":"4","12":"1","13":"1","14":"1","15":"1"},{"1":"4","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"1","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"5","2":"5","3":"5","4":"5","5":"2","6":"2","7":"2","8":"2","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"6","2":"5","3":"1","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"7","2":"5","3":"5","4":"5","5":"5","6":"1","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"8","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"5","10":"5","11":"5","12":"1","13":"1","14":"1","15":"1"},{"1":"9","2":"5","3":"5","4":"5","5":"2","6":"2","7":"2","8":"2","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"10","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"11","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"12","2":"1","3":"1","4":"1","5":"4","6":"4","7":"4","8":"4","9":"4","10":"4","11":"4","12":"4","13":"4","14":"4","15":"4"},{"1":"13","2":"5","3":"5","4":"5","5":"2","6":"2","7":"2","8":"2","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"14","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"15","2":"5","3":"5","4":"5","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"16","2":"1","3":"1","4":"1","5":"4","6":"4","7":"4","8":"4","9":"4","10":"4","11":"4","12":"4","13":"4","14":"4","15":"4"},{"1":"17","2":"4","3":"4","4":"4","5":"4","6":"4","7":"4","8":"4","9":"4","10":"4","11":"4","12":"1","13":"1","14":"1","15":"1"},{"1":"18","2":"5","3":"5","4":"5","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"19","2":"2","3":"2","4":"2","5":"5","6":"5","7":"5","8":"5","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"20","2":"4","3":"4","4":"4","5":"1","6":"1","7":"1","8":"1","9":"4","10":"4","11":"4","12":"4","13":"4","14":"4","15":"4"},{"1":"21","2":"1","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"22","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"23","2":"2","3":"2","4":"2","5":"2","6":"2","7":"2","8":"2","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"24","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"1","14":"5","15":"5"},{"1":"25","2":"4","3":"4","4":"4","5":"4","6":"4","7":"4","8":"4","9":"1","10":"1","11":"1","12":"4","13":"4","14":"4","15":"4"},{"1":"26","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"27","2":"1","3":"1","4":"1","5":"5","6":"5","7":"5","8":"5","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"28","2":"1","3":"1","4":"1","5":"5","6":"5","7":"5","8":"5","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"29","2":"4","3":"4","4":"4","5":"1","6":"1","7":"1","8":"1","9":"4","10":"4","11":"4","12":"4","13":"4","14":"4","15":"4"},{"1":"30","2":"5","3":"5","4":"1","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"31","2":"4","3":"4","4":"4","5":"1","6":"1","7":"1","8":"1","9":"4","10":"4","11":"4","12":"4","13":"4","14":"4","15":"4"},{"1":"32","2":"1","3":"1","4":"1","5":"5","6":"5","7":"5","8":"5","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"33","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"1","13":"5","14":"5","15":"5"},{"1":"34","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"35","2":"3","3":"3","4":"3","5":"3","6":"3","7":"3","8":"3","9":"3","10":"3","11":"3","12":"3","13":"3","14":"3","15":"3"},{"1":"36","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"37","2":"2","3":"2","4":"2","5":"5","6":"5","7":"5","8":"5","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"38","2":"4","3":"4","4":"4","5":"4","6":"4","7":"4","8":"4","9":"1","10":"1","11":"1","12":"4","13":"4","14":"4","15":"4"},{"1":"39","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"5","10":"5","11":"5","12":"1","13":"1","14":"1","15":"1"},{"1":"40","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"1","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"41","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"42","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"1","12":"5","13":"5","14":"5","15":"5"},{"1":"43","2":"2","3":"2","4":"2","5":"5","6":"5","7":"5","8":"5","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"44","2":"2","3":"2","4":"2","5":"5","6":"5","7":"5","8":"5","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"45","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"5","10":"5","11":"5","12":"1","13":"1","14":"1","15":"1"},{"1":"46","2":"2","3":"2","4":"2","5":"2","6":"2","7":"2","8":"2","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"47","2":"4","3":"4","4":"4","5":"4","6":"4","7":"4","8":"4","9":"1","10":"1","11":"1","12":"4","13":"4","14":"4","15":"4"},{"1":"48","2":"5","3":"5","4":"5","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"49","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"1"},{"1":"50","2":"1","3":"1","4":"1","5":"5","6":"5","7":"5","8":"5","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"51","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"52","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"53","2":"5","3":"5","4":"5","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"54","2":"1","3":"1","4":"1","5":"4","6":"4","7":"4","8":"4","9":"4","10":"4","11":"4","12":"4","13":"4","14":"4","15":"4"},{"1":"55","2":"2","3":"2","4":"2","5":"2","6":"2","7":"2","8":"2","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"56","2":"5","3":"5","4":"5","5":"1","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"57","2":"1","3":"1","4":"1","5":"4","6":"4","7":"4","8":"4","9":"4","10":"4","11":"4","12":"4","13":"4","14":"4","15":"4"},{"1":"58","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"1","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"59","2":"4","3":"4","4":"4","5":"1","6":"1","7":"1","8":"1","9":"4","10":"4","11":"4","12":"4","13":"4","14":"4","15":"4"},{"1":"60","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"61","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"5","10":"5","11":"5","12":"1","13":"1","14":"1","15":"1"},{"1":"62","2":"4","3":"4","4":"4","5":"4","6":"4","7":"4","8":"4","9":"4","10":"4","11":"4","12":"1","13":"1","14":"1","15":"1"},{"1":"63","2":"5","3":"5","4":"5","5":"5","6":"5","7":"1","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"64","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"65","2":"5","3":"5","4":"5","5":"5","6":"5","7":"5","8":"5","9":"5","10":"5","11":"5","12":"5","13":"5","14":"5","15":"5"},{"1":"66","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"67","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1"},{"1":"68","2":"2","3":"2","4":"2","5":"2","6":"2","7":"2","8":"2","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"69","2":"5","3":"5","4":"5","5":"2","6":"2","7":"2","8":"2","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"},{"1":"70","2":"2","3":"2","4":"2","5":"5","6":"5","7":"5","8":"5","9":"2","10":"2","11":"2","12":"2","13":"2","14":"2","15":"2"}],"options":{"columns":{"min":{},"max":[10],"total":[15]},"rows":{"min":[10],"max":[10],"total":[70]},"pages":{}}}
@@ -1796,15 +1799,42 @@ NA</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShzZW1pbnIpXG5jb3JwX3JlcF9tbSA8LSBjb25zdHJ1Y3RzKFxuICAgIGNvbXBvc2l0ZShcIk1PVFwiLCBtdWx0aV9pdGVtcyhcIk1PVFwiLCAxOjMpKSxcbiAgICAgIGNvbXBvc2l0ZShcIkxLXCIsIG11bHRpX2l0ZW1zKFwiTEtcIiwgMTo0KSksXG4gIGNvbXBvc2l0ZShcIkRLXCIsIG11bHRpX2l0ZW1zKFwiREtcIiwgMTozKSksXG4gIGNvbXBvc2l0ZShcIktLXCIsIG11bHRpX2l0ZW1zKFwiS0tcIiwgMTo0KSkpXG5cbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShzZW1pbnIpXG5jb3JwX3JlcF9tbSA8LSBjb25zdHJ1Y3RzKFxuICAgIGNvbXBvc2l0ZShcIk1PVFwiLCBtdWx0aV9pdGVtcyhcIk1PVFwiLCAxOjMpKSxcbiAgICAgIGNvbXBvc2l0ZShcIkxLXCIsIG11bHRpX2l0ZW1zKFwiTEtcIiwgMTo0KSksXG4gIGNvbXBvc2l0ZShcIkRLXCIsIG11bHRpX2l0ZW1zKFwiREtcIiwgMTozKSksXG4gIGNvbXBvc2l0ZShcIktLXCIsIG11bHRpX2l0ZW1zKFwiS0tcIiwgMTo0KSkpXG5cblxuXG5jb3JwX3JlcF9tbVxuYGBgIn0= -->
 <pre class="r"><code>library(seminr)
 corp_rep_mm &lt;- constructs(
     composite(&quot;MOT&quot;, multi_items(&quot;MOT&quot;, 1:3)),
       composite(&quot;LK&quot;, multi_items(&quot;LK&quot;, 1:4)),
   composite(&quot;DK&quot;, multi_items(&quot;DK&quot;, 1:3)),
   composite(&quot;KK&quot;, multi_items(&quot;KK&quot;, 1:4)))
-</code></pre>
+
+
+
+corp_rep_mm</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiJGNvbXBvc2l0ZVxuWzFdIFwiTU9UXCIgIFwiTU9UMVwiIFwiQVwiICAgIFwiTU9UXCIgIFwiTU9UMlwiIFwiQVwiICAgIFwiTU9UXCIgIFwiTU9UM1wiIFwiQVwiICAgXG5hdHRyKCxcImNsYXNzXCIpXG5bMV0gXCJjaGFyYWN0ZXJcIiBcImNvbnN0cnVjdFwiIFwiY29tcG9zaXRlXCJcblxuJGNvbXBvc2l0ZVxuIFsxXSBcIkxLXCIgIFwiTEsxXCIgXCJBXCIgICBcIkxLXCIgIFwiTEsyXCIgXCJBXCIgICBcIkxLXCIgIFwiTEszXCIgXCJBXCIgICBcIkxLXCIgIFwiTEs0XCIgXCJBXCIgIFxuYXR0cigsXCJjbGFzc1wiKVxuWzFdIFwiY2hhcmFjdGVyXCIgXCJjb25zdHJ1Y3RcIiBcImNvbXBvc2l0ZVwiXG5cbiRjb21wb3NpdGVcblsxXSBcIkRLXCIgIFwiREsxXCIgXCJBXCIgICBcIkRLXCIgIFwiREsyXCIgXCJBXCIgICBcIkRLXCIgIFwiREszXCIgXCJBXCIgIFxuYXR0cigsXCJjbGFzc1wiKVxuWzFdIFwiY2hhcmFjdGVyXCIgXCJjb25zdHJ1Y3RcIiBcImNvbXBvc2l0ZVwiXG5cbiRjb21wb3NpdGVcbiBbMV0gXCJLS1wiICBcIktLMVwiIFwiQVwiICAgXCJLS1wiICBcIktLMlwiIFwiQVwiICAgXCJLS1wiICBcIktLM1wiIFwiQVwiICAgXCJLS1wiICBcIktLNFwiIFwiQVwiICBcbmF0dHIoLFwiY2xhc3NcIilcblsxXSBcImNoYXJhY3RlclwiIFwiY29uc3RydWN0XCIgXCJjb21wb3NpdGVcIlxuXG5hdHRyKCxcImNsYXNzXCIpXG5bMV0gXCJsaXN0XCIgICAgICAgICAgICAgIFwibWVhc3VyZW1lbnRfbW9kZWxcIiBcInNlbWlucl9tb2RlbFwiICAgICBcbiJ9 -->
+<pre><code>$composite
+[1] &quot;MOT&quot;  &quot;MOT1&quot; &quot;A&quot;    &quot;MOT&quot;  &quot;MOT2&quot; &quot;A&quot;    &quot;MOT&quot;  &quot;MOT3&quot; &quot;A&quot;   
+attr(,&quot;class&quot;)
+[1] &quot;character&quot; &quot;construct&quot; &quot;composite&quot;
+
+$composite
+ [1] &quot;LK&quot;  &quot;LK1&quot; &quot;A&quot;   &quot;LK&quot;  &quot;LK2&quot; &quot;A&quot;   &quot;LK&quot;  &quot;LK3&quot; &quot;A&quot;   &quot;LK&quot;  &quot;LK4&quot; &quot;A&quot;  
+attr(,&quot;class&quot;)
+[1] &quot;character&quot; &quot;construct&quot; &quot;composite&quot;
+
+$composite
+[1] &quot;DK&quot;  &quot;DK1&quot; &quot;A&quot;   &quot;DK&quot;  &quot;DK2&quot; &quot;A&quot;   &quot;DK&quot;  &quot;DK3&quot; &quot;A&quot;  
+attr(,&quot;class&quot;)
+[1] &quot;character&quot; &quot;construct&quot; &quot;composite&quot;
+
+$composite
+ [1] &quot;KK&quot;  &quot;KK1&quot; &quot;A&quot;   &quot;KK&quot;  &quot;KK2&quot; &quot;A&quot;   &quot;KK&quot;  &quot;KK3&quot; &quot;A&quot;   &quot;KK&quot;  &quot;KK4&quot; &quot;A&quot;  
+attr(,&quot;class&quot;)
+[1] &quot;character&quot; &quot;construct&quot; &quot;composite&quot;
+
+attr(,&quot;class&quot;)
+[1] &quot;list&quot;              &quot;measurement_model&quot; &quot;seminr_model&quot;     </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
@@ -1891,153 +1921,305 @@ plot(summary_corp_rep$reliability)
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5zdW1tYXJ5X2NvcnBfcmVwJGRlc2NyaXB0aXZlcyRzdGF0aXN0aWNzJGl0ZW1zXG5gYGAifQ== -->
-<pre class="r"><code>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5zdW1tYXJ5X2NvcnBfcmVwJGRlc2NyaXB0aXZlcyRzdGF0aXN0aWNzJGl0ZW1zXG5gYGBcbmBgYCJ9 -->
+<pre class="r"><code>```r
+
 summary_corp_rep$descriptives$statistics$items</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICBOby4gTWlzc2luZyAgTWVhbiBNZWRpYW4gICBNaW4gICBNYXggU3RkLkRldi4gS3VydG9zaXMgU2tld25lc3Ncbk1PVDEgIDEuMDAwICAgMC4wMDAgMy4wNzEgIDQuMDAwIDEuMDAwIDUuMDAwICAgIDEuNzgwICAgIDEuMjAyICAgLTAuMDc3XG5NT1QyICAyLjAwMCAgIDAuMDAwIDMuMDcxICA0LjAwMCAxLjAwMCA1LjAwMCAgICAxLjc4MCAgICAxLjIwMiAgIC0wLjA3N1xuTU9UMyAgMy4wMDAgICAwLjAwMCAzLjA3MSAgNC4wMDAgMS4wMDAgNS4wMDAgICAgMS43ODAgICAgMS4yMDIgICAtMC4wNzdcbkxLMSAgIDQuMDAwICAgMC4wMDAgMy4wNzEgIDQuMDAwIDEuMDAwIDUuMDAwICAgIDEuNzgwICAgIDEuMjAyICAgLTAuMDc3XG5MSzIgICA1LjAwMCAgIDAuMDAwIDMuMDcxICA0LjAwMCAxLjAwMCA1LjAwMCAgICAxLjc4MCAgICAxLjIwMiAgIC0wLjA3N1xuTEszICAgNi4wMDAgICAwLjAwMCAzLjA3MSAgNC4wMDAgMS4wMDAgNS4wMDAgICAgMS43ODAgICAgMS4yMDIgICAtMC4wNzdcbkxLNCAgIDcuMDAwICAgMC4wMDAgMy4wNzEgIDQuMDAwIDEuMDAwIDUuMDAwICAgIDEuNzgwICAgIDEuMjAyICAgLTAuMDc3XG5ESzEgICA4LjAwMCAgIDAuMDAwIDIuOTAwICAyLjAwMCAxLjAwMCA1LjAwMCAgICAxLjcwNCAgICAxLjI4MCAgICAwLjEyMVxuREsyICAgOS4wMDAgICAwLjAwMCAyLjkwMCAgMi4wMDAgMS4wMDAgNS4wMDAgICAgMS43MDQgICAgMS4yODAgICAgMC4xMjFcbkRLMyAgMTAuMDAwICAgMC4wMDAgMi45MDAgIDIuMDAwIDEuMDAwIDUuMDAwICAgIDEuNzA0ICAgIDEuMjgwICAgIDAuMTIxXG5LSzEgIDExLjAwMCAgIDAuMDAwIDIuNjcxICAyLjAwMCAxLjAwMCA1LjAwMCAgICAxLjY3NCAgICAxLjM5OSAgICAwLjM0M1xuS0syICAxMi4wMDAgICAwLjAwMCAyLjY3MSAgMi4wMDAgMS4wMDAgNS4wMDAgICAgMS42NzQgICAgMS4zOTkgICAgMC4zNDNcbktLMyAgMTMuMDAwICAgMC4wMDAgMi42NzEgIDIuMDAwIDEuMDAwIDUuMDAwICAgIDEuNjc0ICAgIDEuMzk5ICAgIDAuMzQzXG5LSzQgIDE0LjAwMCAgIDAuMDAwIDIuNjcxICAyLjAwMCAxLjAwMCA1LjAwMCAgICAxLjY3NCAgICAxLjM5OSAgICAwLjM0M1xuIn0= -->
-<pre><code>        No. Missing  Mean Median   Min   Max Std.Dev. Kurtosis Skewness
-MOT1  1.000   0.000 3.071  4.000 1.000 5.000    1.780    1.202   -0.077
-MOT2  2.000   0.000 3.071  4.000 1.000 5.000    1.780    1.202   -0.077
-MOT3  3.000   0.000 3.071  4.000 1.000 5.000    1.780    1.202   -0.077
-LK1   4.000   0.000 3.071  4.000 1.000 5.000    1.780    1.202   -0.077
-LK2   5.000   0.000 3.071  4.000 1.000 5.000    1.780    1.202   -0.077
-LK3   6.000   0.000 3.071  4.000 1.000 5.000    1.780    1.202   -0.077
-LK4   7.000   0.000 3.071  4.000 1.000 5.000    1.780    1.202   -0.077
-DK1   8.000   0.000 2.900  2.000 1.000 5.000    1.704    1.280    0.121
-DK2   9.000   0.000 2.900  2.000 1.000 5.000    1.704    1.280    0.121
-DK3  10.000   0.000 2.900  2.000 1.000 5.000    1.704    1.280    0.121
-KK1  11.000   0.000 2.671  2.000 1.000 5.000    1.674    1.399    0.343
-KK2  12.000   0.000 2.671  2.000 1.000 5.000    1.674    1.399    0.343
-KK3  13.000   0.000 2.671  2.000 1.000 5.000    1.674    1.399    0.343
-KK4  14.000   0.000 2.671  2.000 1.000 5.000    1.674    1.399    0.343</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5zdW1tYXJ5X2NvcnBfcmVwJGRlc2NyaXB0aXZlcyRzdGF0aXN0aWNzJGNvbnN0cnVjdHNcbmBgYCJ9 -->
-<pre class="r"><code>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICBOby4gTWlzc2luZyAgTWVhbiBNZWRpYW4gICBNaW4gICBNYXggU3RkLkRldi4gS3VydG9zaXMgU2tld25lc3Ncbk1PVDEgIDEuMDAwICAgMC4wMDAgMy4wNzEgIDQuMDAwIDEuMDAwIDUuMDAwICAgIDEuNzgwICAgIDEuMjAyICAgLTAuMDc3XG5NT1QyICAyLjAwMCAgIDAuMDAwIDMuMDcxICA0LjAwMCAxLjAwMCA1LjAwMCAgICAxLjc4MCAgICAxLjIwMiAgIC0wLjA3N1xuTU9UMyAgMy4wMDAgICAwLjAwMCAzLjA3MSAgNC4wMDAgMS4wMDAgNS4wMDAgICAgMS43ODAgICAgMS4yMDIgICAtMC4wNzdcbkxLMSAgIDQuMDAwICAgMC4wMDAgMy4wNzEgIDQuMDAwIDEuMDAwIDUuMDAwICAgIDEuNzgwICAgIDEuMjAyICAgLTAuMDc3XG5MSzIgICA1LjAwMCAgIDAuMDAwIDMuMDcxICA0LjAwMCAxLjAwMCA1LjAwMCAgICAxLjc4MCAgICAxLjIwMiAgIC0wLjA3N1xuTEszICAgNi4wMDAgICAwLjAwMCAzLjA3MSAgNC4wMDAgMS4wMDAgNS4wMDAgICAgMS43ODAgICAgMS4yMDIgICAtMC4wNzdcbkxLNCAgIDcuMDAwICAgMC4wMDAgMy4wNzEgIDQuMDAwIDEuMDAwIDUuMDAwICAgIDEuNzgwICAgIDEuMjAyICAgLTAuMDc3XG5ESzEgICA4LjAwMCAgIDAuMDAwIDIuOTAwICAyLjAwMCAxLjAwMCA1LjAwMCAgICAxLjcwNCAgICAxLjI4MCAgICAwLjEyMVxuREsyICAgOS4wMDAgICAwLjAwMCAyLjkwMCAgMi4wMDAgMS4wMDAgNS4wMDAgICAgMS43MDQgICAgMS4yODAgICAgMC4xMjFcbkRLMyAgMTAuMDAwICAgMC4wMDAgMi45MDAgIDIuMDAwIDEuMDAwIDUuMDAwICAgIDEuNzA0ICAgIDEuMjgwICAgIDAuMTIxXG5LSzEgIDExLjAwMCAgIDAuMDAwIDIuNjcxICAyLjAwMCAxLjAwMCA1LjAwMCAgICAxLjY3NCAgICAxLjM5OSAgICAwLjM0M1xuS0syICAxMi4wMDAgICAwLjAwMCAyLjY3MSAgMi4wMDAgMS4wMDAgNS4wMDAgICAgMS42NzQgICAgMS4zOTkgICAgMC4zNDNcbktLMyAgMTMuMDAwICAgMC4wMDAgMi42NzEgIDIuMDAwIDEuMDAwIDUuMDAwICAgIDEuNjc0ICAgIDEuMzk5ICAgIDAuMzQzXG5LSzQgIDE0LjAwMCAgIDAuMDAwIDIuNjcxICAyLjAwMCAxLjAwMCA1LjAwMCAgICAxLjY3NCAgICAxLjM5OSAgICAwLjM0M1xuIn0= --&gt;
+</code></pre>
+<pre><code>    No. Missing  Mean Median   Min   Max Std.Dev. Kurtosis Skewness</code></pre>
+<p>MOT1 1.000 0.000 3.071 4.000 1.000 5.000 1.780 1.202 -0.077 MOT2
+2.000 0.000 3.071 4.000 1.000 5.000 1.780 1.202 -0.077 MOT3 3.000 0.000
+3.071 4.000 1.000 5.000 1.780 1.202 -0.077 LK1 4.000 0.000 3.071 4.000
+1.000 5.000 1.780 1.202 -0.077 LK2 5.000 0.000 3.071 4.000 1.000 5.000
+1.780 1.202 -0.077 LK3 6.000 0.000 3.071 4.000 1.000 5.000 1.780 1.202
+-0.077 LK4 7.000 0.000 3.071 4.000 1.000 5.000 1.780 1.202 -0.077 DK1
+8.000 0.000 2.900 2.000 1.000 5.000 1.704 1.280 0.121 DK2 9.000 0.000
+2.900 2.000 1.000 5.000 1.704 1.280 0.121 DK3 10.000 0.000 2.900 2.000
+1.000 5.000 1.704 1.280 0.121 KK1 11.000 0.000 2.671 2.000 1.000 5.000
+1.674 1.399 0.343 KK2 12.000 0.000 2.671 2.000 1.000 5.000 1.674 1.399
+0.343 KK3 13.000 0.000 2.671 2.000 1.000 5.000 1.674 1.399 0.343 KK4
+14.000 0.000 2.671 2.000 1.000 5.000 1.674 1.399 0.343</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5zdW1tYXJ5X2NvcnBfcmVwJGRlc2NyaXB0aXZlcyRzdGF0aXN0aWNzJGNvbnN0cnVjdHNcbmBgYFxuYGBgIn0= --&gt;
+
+```r
+```r
+
 summary_corp_rep$descriptives$statistics$constructs</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgTm8uIE1pc3NpbmcgICBNZWFuIE1lZGlhbiAgICBNaW4gICBNYXggU3RkLkRldi4gS3VydG9zaXMgU2tld25lc3Ncbk1PVCAxLjAwMCAgIDAuMDAwIC0wLjAwMCAgMC4zNDMgLTEuMTkzIDEuMTExICAgIDEuMDAwICAgIDEuMjU0ICAgLTAuMDk3XG5MSyAgMi4wMDAgICAwLjAwMCAtMC4wMDAgIDAuNTM3IC0xLjE5NyAxLjExNCAgICAxLjAwMCAgICAxLjI1MiAgIC0wLjExMVxuREsgIDMuMDAwICAgMC4wMDAgIDAuMDAwIC0wLjU0MyAtMS4xNDYgMS4yNjcgICAgMS4wMDAgICAgMS4zMjkgICAgMC4wOTlcbktLICA0LjAwMCAgIDAuMDAwICAwLjAwMCAtMC40MTQgLTEuMDMxIDEuNDM2ICAgIDEuMDAwICAgIDEuNDEyICAgIDAuMjk2XG4ifQ== -->
-<pre><code>      No. Missing   Mean Median    Min   Max Std.Dev. Kurtosis Skewness
-MOT 1.000   0.000 -0.000  0.343 -1.193 1.111    1.000    1.254   -0.097
-LK  2.000   0.000 -0.000  0.537 -1.197 1.114    1.000    1.252   -0.111
-DK  3.000   0.000  0.000 -0.543 -1.146 1.267    1.000    1.329    0.099
-KK  4.000   0.000  0.000 -0.414 -1.031 1.436    1.000    1.412    0.296</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5zdW1tYXJ5X2NvcnBfcmVwJGxvYWRpbmdzXG5gYGAifQ== -->
-<pre class="r"><code>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiICAgICAgTm8uIE1pc3NpbmcgICBNZWFuIE1lZGlhbiAgICBNaW4gICBNYXggU3RkLkRldi4gS3VydG9zaXMgU2tld25lc3Ncbk1PVCAxLjAwMCAgIDAuMDAwIC0wLjAwMCAgMC4zNDMgLTEuMTkzIDEuMTExICAgIDEuMDAwICAgIDEuMjU0ICAgLTAuMDk3XG5MSyAgMi4wMDAgICAwLjAwMCAtMC4wMDAgIDAuNTM3IC0xLjE5NyAxLjExNCAgICAxLjAwMCAgICAxLjI1MiAgIC0wLjExMVxuREsgIDMuMDAwICAgMC4wMDAgIDAuMDAwIC0wLjU0MyAtMS4xNDYgMS4yNjcgICAgMS4wMDAgICAgMS4zMjkgICAgMC4wOTlcbktLICA0LjAwMCAgIDAuMDAwICAwLjAwMCAtMC40MTQgLTEuMDMxIDEuNDM2ICAgIDEuMDAwICAgIDEuNDEyICAgIDAuMjk2XG4ifQ== --&gt;
+</code></pre>
+<pre><code>  No. Missing   Mean Median    Min   Max Std.Dev. Kurtosis Skewness</code></pre>
+<p>MOT 1.000 0.000 -0.000 0.343 -1.193 1.111 1.000 1.254 -0.097 LK 2.000
+0.000 -0.000 0.537 -1.197 1.114 1.000 1.252 -0.111 DK 3.000 0.000 0.000
+-0.543 -1.146 1.267 1.000 1.329 0.099 KK 4.000 0.000 0.000 -0.414 -1.031
+1.436 1.000 1.412 0.296</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5zdW1tYXJ5X2NvcnBfcmVwJGxvYWRpbmdzXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+
 summary_corp_rep$loadings</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIE1PVCAgICBMSyAgICBESyAgICBLS1xuTU9UMSAwLjk3NSAwLjAwMCAwLjAwMCAwLjAwMFxuTU9UMiAwLjk3NSAwLjAwMCAwLjAwMCAwLjAwMFxuTU9UMyAwLjk3NSAwLjAwMCAwLjAwMCAwLjAwMFxuTEsxICAwLjAwMCAwLjk3MiAwLjAwMCAwLjAwMFxuTEsyICAwLjAwMCAwLjk3MiAwLjAwMCAwLjAwMFxuTEszICAwLjAwMCAwLjk3MiAwLjAwMCAwLjAwMFxuTEs0ICAwLjAwMCAwLjk3MiAwLjAwMCAwLjAwMFxuREsxICAwLjAwMCAwLjAwMCAwLjk3MyAwLjAwMFxuREsyICAwLjAwMCAwLjAwMCAwLjk3MyAwLjAwMFxuREszICAwLjAwMCAwLjAwMCAwLjk3MyAwLjAwMFxuS0sxICAwLjAwMCAwLjAwMCAwLjAwMCAwLjk2OFxuS0syICAwLjAwMCAwLjAwMCAwLjAwMCAwLjk2OFxuS0szICAwLjAwMCAwLjAwMCAwLjAwMCAwLjk2OFxuS0s0ICAwLjAwMCAwLjAwMCAwLjAwMCAwLjk2OFxuIn0= -->
-<pre><code>       MOT    LK    DK    KK
-MOT1 0.975 0.000 0.000 0.000
-MOT2 0.975 0.000 0.000 0.000
-MOT3 0.975 0.000 0.000 0.000
-LK1  0.000 0.972 0.000 0.000
-LK2  0.000 0.972 0.000 0.000
-LK3  0.000 0.972 0.000 0.000
-LK4  0.000 0.972 0.000 0.000
-DK1  0.000 0.000 0.973 0.000
-DK2  0.000 0.000 0.973 0.000
-DK3  0.000 0.000 0.973 0.000
-KK1  0.000 0.000 0.000 0.968
-KK2  0.000 0.000 0.000 0.968
-KK3  0.000 0.000 0.000 0.968
-KK4  0.000 0.000 0.000 0.968</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5ib290X2NvcnBfcmVwIDwtIGJvb3RzdHJhcF9tb2RlbChzZW1pbnJfbW9kZWwgPSBjb3JwX3JlcF9wbHNfbW9kZWwsXG4gIG5ib290ID0gMTAwMCxcbiAgY29yZXMgPSBOVUxMLFxuICBzZWVkID0gMTIzKVxuYGBgIn0= -->
-<pre class="r"><code>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIE1PVCAgICBMSyAgICBESyAgICBLS1xuTU9UMSAwLjk3NSAwLjAwMCAwLjAwMCAwLjAwMFxuTU9UMiAwLjk3NSAwLjAwMCAwLjAwMCAwLjAwMFxuTU9UMyAwLjk3NSAwLjAwMCAwLjAwMCAwLjAwMFxuTEsxICAwLjAwMCAwLjk3MiAwLjAwMCAwLjAwMFxuTEsyICAwLjAwMCAwLjk3MiAwLjAwMCAwLjAwMFxuTEszICAwLjAwMCAwLjk3MiAwLjAwMCAwLjAwMFxuTEs0ICAwLjAwMCAwLjk3MiAwLjAwMCAwLjAwMFxuREsxICAwLjAwMCAwLjAwMCAwLjk3MyAwLjAwMFxuREsyICAwLjAwMCAwLjAwMCAwLjk3MyAwLjAwMFxuREszICAwLjAwMCAwLjAwMCAwLjk3MyAwLjAwMFxuS0sxICAwLjAwMCAwLjAwMCAwLjAwMCAwLjk2OFxuS0syICAwLjAwMCAwLjAwMCAwLjAwMCAwLjk2OFxuS0szICAwLjAwMCAwLjAwMCAwLjAwMCAwLjk2OFxuS0s0ICAwLjAwMCAwLjAwMCAwLjAwMCAwLjk2OFxuIn0= --&gt;
+</code></pre>
+<pre><code>   MOT    LK    DK    KK</code></pre>
+<p>MOT1 0.975 0.000 0.000 0.000 MOT2 0.975 0.000 0.000 0.000 MOT3 0.975
+0.000 0.000 0.000 LK1 0.000 0.972 0.000 0.000 LK2 0.000 0.972 0.000
+0.000 LK3 0.000 0.972 0.000 0.000 LK4 0.000 0.972 0.000 0.000 DK1 0.000
+0.000 0.973 0.000 DK2 0.000 0.000 0.973 0.000 DK3 0.000 0.000 0.973
+0.000 KK1 0.000 0.000 0.000 0.968 KK2 0.000 0.000 0.000 0.968 KK3 0.000
+0.000 0.000 0.968 KK4 0.000 0.000 0.000 0.968</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5ib290X2NvcnBfcmVwIDwtIGJvb3RzdHJhcF9tb2RlbChzZW1pbnJfbW9kZWwgPSBjb3JwX3JlcF9wbHNfbW9kZWwsXG4gIG5ib290ID0gMTAwMCxcbiAgY29yZXMgPSBOVUxMLFxuICBzZWVkID0gMTIzKVxuYGBgXG5gYGAifQ== --&gt;
+
+```r
+```r
+
 boot_corp_rep &lt;- bootstrap_model(seminr_model = corp_rep_pls_model,
   nboot = 1000,
   cores = NULL,
   seed = 123)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiQm9vdHN0cmFwcGluZyBtb2RlbCB1c2luZyBzZW1pbnIuLi5cblNFTWluUiBNb2RlbCBzdWNjZXNzZnVsbHkgYm9vdHN0cmFwcGVkXG4ifQ== -->
-<pre><code>Bootstrapping model using seminr...
-SEMinR Model successfully bootstrapped</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyMgQm9vdHN0cmFwcGluZyBtb2RlbCB1c2luZyBzZW1pbnIuLi5cbiMjIFNFTWluUiBNb2RlbCBzdWNjZXNzZnVsbHkgYm9vdHN0cmFwcGVkXG5cbnN1bV9ib290X2NvcnBfcmVwIDwtIHN1bW1hcnkoYm9vdF9jb3JwX3JlcClcblxuc3VtX2Jvb3RfY29ycF9yZXAkYm9vdHN0cmFwcGVkX3BhdGhzXG5gYGAifQ== -->
-<pre class="r"><code>## Bootstrapping model using seminr...
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiQm9vdHN0cmFwcGluZyBtb2RlbCB1c2luZyBzZW1pbnIuLi5cblNFTWluUiBNb2RlbCBzdWNjZXNzZnVsbHkgYm9vdHN0cmFwcGVkXG4ifQ== --&gt;
+</code></pre>
+<p>Bootstrapping model using seminr… SEMinR Model successfully
+bootstrapped</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyMgQm9vdHN0cmFwcGluZyBtb2RlbCB1c2luZyBzZW1pbnIuLi5cbiMjIFNFTWluUiBNb2RlbCBzdWNjZXNzZnVsbHkgYm9vdHN0cmFwcGVkXG5cbnN1bV9ib290X2NvcnBfcmVwIDwtIHN1bW1hcnkoYm9vdF9jb3JwX3JlcClcblxuc3VtX2Jvb3RfY29ycF9yZXAkYm9vdHN0cmFwcGVkX3BhdGhzXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+## Bootstrapping model using seminr...
 ## SEMinR Model successfully bootstrapped
 
 sum_boot_corp_rep &lt;- summary(boot_corp_rep)
 
 sum_boot_corp_rep$bootstrapped_paths</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgT3JpZ2luYWwgRXN0LiBCb290c3RyYXAgTWVhbiBCb290c3RyYXAgU0QgVCBTdGF0LiAyLjUlIENJIDk3LjUlIENJXG5NT1QgIC0+ICBMSyAgICAgICAgIDAuMjc4ICAgICAgICAgIDAuMjgxICAgICAgICAwLjExOSAgIDIuMzQxICAgMC4wMzYgICAgMC41MDlcbk1PVCAgLT4gIERLICAgICAgICAgMC4zMDEgICAgICAgICAgMC4zMDUgICAgICAgIDAuMTEzICAgMi42NzEgICAwLjEwMSAgICAwLjUzMVxuTU9UICAtPiAgS0sgICAgICAgICAwLjMxMyAgICAgICAgICAwLjMwNiAgICAgICAgMC4wODIgICAzLjgyMiAgIDAuMTUzICAgIDAuNDc5XG5MSyAgLT4gIERLICAgICAgICAgIDAuMzAzICAgICAgICAgIDAuMzExICAgICAgICAwLjExNCAgIDIuNjUzICAgMC4wODQgICAgMC41MzlcbkxLICAtPiAgS0sgICAgICAgICAgMC4zMTUgICAgICAgICAgMC4zMDggICAgICAgIDAuMDc5ICAgMy45OTAgICAwLjE1OSAgICAwLjQ3MFxuREsgIC0+ICBLSyAgICAgICAgICAwLjQyNCAgICAgICAgICAwLjQzMiAgICAgICAgMC4xMDAgICA0LjI0OSAgIDAuMjU0ICAgIDAuNjQ3XG4ifQ== -->
-<pre><code>            Original Est. Bootstrap Mean Bootstrap SD T Stat. 2.5% CI 97.5% CI
-MOT  -&gt;  LK         0.278          0.281        0.119   2.341   0.036    0.509
-MOT  -&gt;  DK         0.301          0.305        0.113   2.671   0.101    0.531
-MOT  -&gt;  KK         0.313          0.306        0.082   3.822   0.153    0.479
-LK  -&gt;  DK          0.303          0.311        0.114   2.653   0.084    0.539
-LK  -&gt;  KK          0.315          0.308        0.079   3.990   0.159    0.470
-DK  -&gt;  KK          0.424          0.432        0.100   4.249   0.254    0.647</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5zcGVjaWZpY19lZmZlY3Rfc2lnbmlmaWNhbmNlKGJvb3Rfc2VtaW5yX21vZGVsID0gYm9vdF9jb3JwX3JlcCwgXG4gIGZyb20gPSBcIk1PVFwiLCBcbiAgdGhyb3VnaCA9IGMoXCJMS1wiLCBcIkRLXCIpLCBcbiAgdG8gPSBcIktLXCIsIFxuICBhbHBoYSA9IDAuMDUpXG5gYGAifQ== -->
-<pre class="r"><code>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiICAgICAgICAgICAgT3JpZ2luYWwgRXN0LiBCb290c3RyYXAgTWVhbiBCb290c3RyYXAgU0QgVCBTdGF0LiAyLjUlIENJIDk3LjUlIENJXG5NT1QgIC0+ICBMSyAgICAgICAgIDAuMjc4ICAgICAgICAgIDAuMjgxICAgICAgICAwLjExOSAgIDIuMzQxICAgMC4wMzYgICAgMC41MDlcbk1PVCAgLT4gIERLICAgICAgICAgMC4zMDEgICAgICAgICAgMC4zMDUgICAgICAgIDAuMTEzICAgMi42NzEgICAwLjEwMSAgICAwLjUzMVxuTU9UICAtPiAgS0sgICAgICAgICAwLjMxMyAgICAgICAgICAwLjMwNiAgICAgICAgMC4wODIgICAzLjgyMiAgIDAuMTUzICAgIDAuNDc5XG5MSyAgLT4gIERLICAgICAgICAgIDAuMzAzICAgICAgICAgIDAuMzExICAgICAgICAwLjExNCAgIDIuNjUzICAgMC4wODQgICAgMC41MzlcbkxLICAtPiAgS0sgICAgICAgICAgMC4zMTUgICAgICAgICAgMC4zMDggICAgICAgIDAuMDc5ICAgMy45OTAgICAwLjE1OSAgICAwLjQ3MFxuREsgIC0+ICBLSyAgICAgICAgICAwLjQyNCAgICAgICAgICAwLjQzMiAgICAgICAgMC4xMDAgICA0LjI0OSAgIDAuMjU0ICAgIDAuNjQ3XG4ifQ== --&gt;
+</code></pre>
+<pre><code>        Original Est. Bootstrap Mean Bootstrap SD T Stat. 2.5% CI 97.5% CI</code></pre>
+<p>MOT -&gt; LK 0.278 0.281 0.119 2.341 0.036 0.509 MOT -&gt; DK 0.301
+0.305 0.113 2.671 0.101 0.531 MOT -&gt; KK 0.313 0.306 0.082 3.822 0.153
+0.479 LK -&gt; DK 0.303 0.311 0.114 2.653 0.084 0.539 LK -&gt; KK 0.315
+0.308 0.079 3.990 0.159 0.470 DK -&gt; KK 0.424 0.432 0.100 4.249 0.254
+0.647</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5zcGVjaWZpY19lZmZlY3Rfc2lnbmlmaWNhbmNlKGJvb3Rfc2VtaW5yX21vZGVsID0gYm9vdF9jb3JwX3JlcCwgXG4gIGZyb20gPSBcXE1PVFxcLCBcbiAgdGhyb3VnaCA9IGMoXFxMS1xcLCBcXERLXFwpLCBcbiAgdG8gPSBcXEtLXFwsIFxuICBhbHBoYSA9IDAuMDUpXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+
 specific_effect_significance(boot_seminr_model = boot_corp_rep, 
-  from = &quot;MOT&quot;, 
-  through = c(&quot;LK&quot;, &quot;DK&quot;), 
-  to = &quot;KK&quot;, 
+  from = \MOT\, 
+  through = c(\LK\, \DK\), 
+  to = \KK\, 
   alpha = 0.05)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiIE9yaWdpbmFsIEVzdC4gQm9vdHN0cmFwIE1lYW4gICBCb290c3RyYXAgU0QgICAgICAgIFQgU3RhdC4gICAgICAgIDIuNSUgQ0kgICAgICAgOTcuNSUgQ0kgXG4gICAwLjAzNTcyNjQzMSAgICAwLjAzNjk1MDU1NyAgICAwLjAyMTgzNjgzOCAgICAxLjYzNjA2MjQ5MCAgICAwLjAwMTEzMDg4MSAgICAwLjA4Mzk1MjIxOCBcbiJ9 -->
-<pre><code> Original Est. Bootstrap Mean   Bootstrap SD        T Stat.        2.5% CI       97.5% CI 
-   0.035726431    0.036950557    0.021836838    1.636062490    0.001130881    0.083952218 </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5zcGVjaWZpY19lZmZlY3Rfc2lnbmlmaWNhbmNlKGJvb3Rfc2VtaW5yX21vZGVsID0gYm9vdF9jb3JwX3JlcCwgXG4gIGZyb20gPSBcIk1PVFwiLCBcbiAgdGhyb3VnaCA9IGMoIFwiREtcIiksIFxuICB0byA9IFwiS0tcIiwgXG4gIGFscGhhID0gMC4wNSlcbmBgYCJ9 -->
-<pre class="r"><code>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiIE9yaWdpbmFsIEVzdC4gQm9vdHN0cmFwIE1lYW4gICBCb290c3RyYXAgU0QgICAgICAgIFQgU3RhdC4gICAgICAgIDIuNSUgQ0kgICAgICAgOTcuNSUgQ0kgXG4gICAwLjAzNTcyNjQzMSAgICAwLjAzNjk1MDU1NyAgICAwLjAyMTgzNjgzOCAgICAxLjYzNjA2MjQ5MCAgICAwLjAwMTEzMDg4MSAgICAwLjA4Mzk1MjIxOCBcbiJ9 --&gt;
+</code></pre>
+<p>Original Est. Bootstrap Mean Bootstrap SD T Stat. 2.5% CI 97.5% CI
+0.035726431 0.036950557 0.021836838 1.636062490 0.001130881
+0.083952218</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5zcGVjaWZpY19lZmZlY3Rfc2lnbmlmaWNhbmNlKGJvb3Rfc2VtaW5yX21vZGVsID0gYm9vdF9jb3JwX3JlcCwgXG4gIGZyb20gPSBcXE1PVFxcLCBcbiAgdGhyb3VnaCA9IGMoIFxcREtcXCksIFxuICB0byA9IFxcS0tcXCwgXG4gIGFscGhhID0gMC4wNSlcbmBgYFxuYGBgIn0= --&gt;
+
+```r
+```r
+
 specific_effect_significance(boot_seminr_model = boot_corp_rep, 
-  from = &quot;MOT&quot;, 
-  through = c( &quot;DK&quot;), 
-  to = &quot;KK&quot;, 
+  from = \MOT\, 
+  through = c( \DK\), 
+  to = \KK\, 
   alpha = 0.05)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiIE9yaWdpbmFsIEVzdC4gQm9vdHN0cmFwIE1lYW4gICBCb290c3RyYXAgU0QgICAgICAgIFQgU3RhdC4gICAgICAgIDIuNSUgQ0kgICAgICAgOTcuNSUgQ0kgXG4gICAgMC4xMjc3NTgxOSAgICAgMC4xMzU0ODUwMSAgICAgMC4wNjU3Njc3MCAgICAgMS45NDI1NjcxOSAgICAgMC4wMzM0MTAwMSAgICAgMC4yODU5MjU0NiBcbiJ9 -->
-<pre><code> Original Est. Bootstrap Mean   Bootstrap SD        T Stat.        2.5% CI       97.5% CI 
-    0.12775819     0.13548501     0.06576770     1.94256719     0.03341001     0.28592546 </code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5zdW1tYXJ5X2NvcnBfcmVwJHZhbGlkaXR5JGZsX2NyaXRlcmlhXG5cbmBgYCJ9 -->
-<pre class="r"><code>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiIE9yaWdpbmFsIEVzdC4gQm9vdHN0cmFwIE1lYW4gICBCb290c3RyYXAgU0QgICAgICAgIFQgU3RhdC4gICAgICAgIDIuNSUgQ0kgICAgICAgOTcuNSUgQ0kgXG4gICAgMC4xMjc3NTgxOSAgICAgMC4xMzU0ODUwMSAgICAgMC4wNjU3Njc3MCAgICAgMS45NDI1NjcxOSAgICAgMC4wMzM0MTAwMSAgICAgMC4yODU5MjU0NiBcbiJ9 --&gt;
+</code></pre>
+<p>Original Est. Bootstrap Mean Bootstrap SD T Stat. 2.5% CI 97.5% CI
+0.12775819 0.13548501 0.06576770 1.94256719 0.03341001 0.28592546</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5zdW1tYXJ5X2NvcnBfcmVwJHZhbGlkaXR5JGZsX2NyaXRlcmlhXG5cbmBgYFxuYGBgIn0= --&gt;
+
+```r
+```r
+
 summary_corp_rep$validity$fl_criteria
 </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3VtbWFyeV9jb3JwX3JlcCR2YWxpZGl0eSRodG10XG5cblxuYGBgIn0= -->
-<pre class="r"><code>summary_corp_rep$validity$htmt
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuc3VtbWFyeV9jb3JwX3JlcCR2YWxpZGl0eSRodG10XG5cblxuYGBgXG5gYGAifQ== --&gt;
+
+```r
+```r
+summary_corp_rep$validity$htmt
 </code></pre>
+<p>```</p>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKCgpgYGB7cn0KCmxpc3QuZmlsZXMoKQoKCmBgYAoKYGBge3J9CgpsaWJyYXJ5KHJlYWR4bCkKCmRhdCA8LSByZWFkX2V4Y2VsKCJjb250b2ggZGF0YS54bHN4IikKCgpkYXQgPC0gYXMuZGF0YS5mcmFtZShkYXQpCgpkYXQKICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgIApgYGAKCgoKYGBge3J9CmxpYnJhcnkoc2VtaW5yKQpjb3JwX3JlcF9tbSA8LSBjb25zdHJ1Y3RzKAogICAgY29tcG9zaXRlKCJNT1QiLCBtdWx0aV9pdGVtcygiTU9UIiwgMTozKSksCiAgICAgIGNvbXBvc2l0ZSgiTEsiLCBtdWx0aV9pdGVtcygiTEsiLCAxOjQpKSwKICBjb21wb3NpdGUoIkRLIiwgbXVsdGlfaXRlbXMoIkRLIiwgMTozKSksCiAgY29tcG9zaXRlKCJLSyIsIG11bHRpX2l0ZW1zKCJLSyIsIDE6NCkpKQoKYGBgCgoKCmBgYHtyfQoKY29ycF9yZXBfc20gPC0gcmVsYXRpb25zaGlwcygKICBwYXRocyhmcm9tID0gYygiTU9UIiksIHRvID0gYygiREsiKSksCiAgcGF0aHMoZnJvbSA9IGMoIk1PVCIpLCB0byA9IGMoIktLIikpLAogIHBhdGhzKGZyb20gPSBjKCJMSyIpLCB0byA9IGMoIkRLIikpLAogIHBhdGhzKGZyb20gPSBjKCJMSyIpLCB0byA9IGMoIktLIikpLAogICAgcGF0aHMoZnJvbSA9IGMoIk1PVCIpLCB0byA9IGMoIkxLIikpLAogIHBhdGhzKGZyb20gPSBjKCJESyIpLCB0byA9IGMoIktLIikpCiAgCiAgCiAgCiAgKQoKYGBgCgoKCgoKYGBge3J9CmNvcnBfcmVwX3Bsc19tb2RlbCA8LSBlc3RpbWF0ZV9wbHMoZGF0YSA9IGRhdCwKICBtZWFzdXJlbWVudF9tb2RlbCA9IGNvcnBfcmVwX21tLAogIHN0cnVjdHVyYWxfbW9kZWwgID0gY29ycF9yZXBfc20sCiAgaW5uZXJfd2VpZ2h0cyA9IHBhdGhfd2VpZ2h0aW5nLAogIG1pc3NpbmcgPSBtZWFuX3JlcGxhY2VtZW50KQoKCmBgYAoKCgoKCgoKCmBgYHtyfQoKc3VtbWFyeV9jb3JwX3JlcCA8LSBzdW1tYXJ5KGNvcnBfcmVwX3Bsc19tb2RlbCkKCgpzdW1tYXJ5X2NvcnBfcmVwJHBhdGhzCgpgYGAKCgoKCmBgYHtyfQoKc3VtbWFyeV9jb3JwX3JlcCRyZWxpYWJpbGl0eQoKYGBgCgoKCgpgYGB7cn0KCnBsb3Qoc3VtbWFyeV9jb3JwX3JlcCRyZWxpYWJpbGl0eSkKCmBgYAoKCgoKCmBgYHtyfQoKc3VtbWFyeV9jb3JwX3JlcCRkZXNjcmlwdGl2ZXMkc3RhdGlzdGljcyRpdGVtcwoKYGBgCgoKCgpgYGB7cn0KCnN1bW1hcnlfY29ycF9yZXAkZGVzY3JpcHRpdmVzJHN0YXRpc3RpY3MkY29uc3RydWN0cwoKYGBgCgoKCgpgYGB7cn0KCnN1bW1hcnlfY29ycF9yZXAkbG9hZGluZ3MKCmBgYAoKCgpgYGB7cn0KCmJvb3RfY29ycF9yZXAgPC0gYm9vdHN0cmFwX21vZGVsKHNlbWlucl9tb2RlbCA9IGNvcnBfcmVwX3Bsc19tb2RlbCwKICBuYm9vdCA9IDEwMDAsCiAgY29yZXMgPSBOVUxMLAogIHNlZWQgPSAxMjMpCiMjIEJvb3RzdHJhcHBpbmcgbW9kZWwgdXNpbmcgc2VtaW5yLi4uCiMjIFNFTWluUiBNb2RlbCBzdWNjZXNzZnVsbHkgYm9vdHN0cmFwcGVkCgpzdW1fYm9vdF9jb3JwX3JlcCA8LSBzdW1tYXJ5KGJvb3RfY29ycF9yZXApCgpzdW1fYm9vdF9jb3JwX3JlcCRib290c3RyYXBwZWRfcGF0aHMKCmBgYAoKCmBgYHtyfQoKc3BlY2lmaWNfZWZmZWN0X3NpZ25pZmljYW5jZShib290X3NlbWlucl9tb2RlbCA9IGJvb3RfY29ycF9yZXAsIAogIGZyb20gPSAiTU9UIiwgCiAgdGhyb3VnaCA9IGMoIkxLIiwgIkRLIiksIAogIHRvID0gIktLIiwgCiAgYWxwaGEgPSAwLjA1KQoKYGBgCgoKYGBge3J9CgpzcGVjaWZpY19lZmZlY3Rfc2lnbmlmaWNhbmNlKGJvb3Rfc2VtaW5yX21vZGVsID0gYm9vdF9jb3JwX3JlcCwgCiAgZnJvbSA9ICJNT1QiLCAKICB0aHJvdWdoID0gYyggIkRLIiksIAogIHRvID0gIktLIiwgCiAgYWxwaGEgPSAwLjA1KQoKYGBgCgoKCgpgYGB7cn0KCnN1bW1hcnlfY29ycF9yZXAkdmFsaWRpdHkkZmxfY3JpdGVyaWEKCmBgYAoKCgoKCgoKCgoKYGBge3J9CnN1bW1hcnlfY29ycF9yZXAkdmFsaWRpdHkkaHRtdAoKCmBgYAoKCgoKCgoKCgoKCgoKCgoKCgoKCgoK</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCg0KYGBge3J9DQoNCmxpc3QuZmlsZXMoKQ0KDQoNCmBgYA0KDQpgYGB7cn0NCg0KbGlicmFyeShyZWFkeGwpDQoNCmRhdCA8LSByZWFkX2V4Y2VsKCJjb250b2ggZGF0YS54bHN4IikNCg0KDQpkYXQgPC0gYXMuZGF0YS5mcmFtZShkYXQpDQoNCmRhdA0KICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICANCmBgYA0KDQoNCg0KYGBge3J9DQpsaWJyYXJ5KHNlbWlucikNCmNvcnBfcmVwX21tIDwtIGNvbnN0cnVjdHMoDQogICAgY29tcG9zaXRlKCJNT1QiLCBtdWx0aV9pdGVtcygiTU9UIiwgMTozKSksDQogICAgICBjb21wb3NpdGUoIkxLIiwgbXVsdGlfaXRlbXMoIkxLIiwgMTo0KSksDQogIGNvbXBvc2l0ZSgiREsiLCBtdWx0aV9pdGVtcygiREsiLCAxOjMpKSwNCiAgY29tcG9zaXRlKCJLSyIsIG11bHRpX2l0ZW1zKCJLSyIsIDE6NCkpKQ0KDQoNCg0KY29ycF9yZXBfbW0NCg0KYGBgDQoNCg0KDQpgYGB7cn0NCg0KY29ycF9yZXBfc20gPC0gcmVsYXRpb25zaGlwcygNCiAgcGF0aHMoZnJvbSA9IGMoIk1PVCIpLCB0byA9IGMoIkRLIikpLA0KICBwYXRocyhmcm9tID0gYygiTU9UIiksIHRvID0gYygiS0siKSksDQogIHBhdGhzKGZyb20gPSBjKCJMSyIpLCB0byA9IGMoIkRLIikpLA0KICBwYXRocyhmcm9tID0gYygiTEsiKSwgdG8gPSBjKCJLSyIpKSwNCiAgICBwYXRocyhmcm9tID0gYygiTU9UIiksIHRvID0gYygiTEsiKSksDQogIHBhdGhzKGZyb20gPSBjKCJESyIpLCB0byA9IGMoIktLIikpDQogIA0KICANCiAgDQogICkNCg0KYGBgDQoNCg0KDQoNCg0KYGBge3J9DQpjb3JwX3JlcF9wbHNfbW9kZWwgPC0gZXN0aW1hdGVfcGxzKGRhdGEgPSBkYXQsDQogIG1lYXN1cmVtZW50X21vZGVsID0gY29ycF9yZXBfbW0sDQogIHN0cnVjdHVyYWxfbW9kZWwgID0gY29ycF9yZXBfc20sDQogIGlubmVyX3dlaWdodHMgPSBwYXRoX3dlaWdodGluZywNCiAgbWlzc2luZyA9IG1lYW5fcmVwbGFjZW1lbnQpDQoNCg0KYGBgDQoNCg0KDQoNCg0KDQoNCg0KYGBge3J9DQoNCnN1bW1hcnlfY29ycF9yZXAgPC0gc3VtbWFyeShjb3JwX3JlcF9wbHNfbW9kZWwpDQoNCg0Kc3VtbWFyeV9jb3JwX3JlcCRwYXRocw0KDQpgYGANCg0KDQoNCg0KYGBge3J9DQoNCnN1bW1hcnlfY29ycF9yZXAkcmVsaWFiaWxpdHkNCg0KYGBgDQoNCg0KDQoNCmBgYHtyfQ0KDQpwbG90KHN1bW1hcnlfY29ycF9yZXAkcmVsaWFiaWxpdHkpDQoNCmBgYA0KDQoNCg0KDQoNCmBgYHtyfQ0KDQpzdW1tYXJ5X2NvcnBfcmVwJGRlc2NyaXB0aXZlcyRzdGF0aXN0aWNzJGl0ZW1zDQoNCmBgYA0KDQoNCg0KDQpgYGB7cn0NCg0Kc3VtbWFyeV9jb3JwX3JlcCRkZXNjcmlwdGl2ZXMkc3RhdGlzdGljcyRjb25zdHJ1Y3RzDQoNCmBgYA0KDQoNCg0KDQpgYGB7cn0NCg0Kc3VtbWFyeV9jb3JwX3JlcCRsb2FkaW5ncw0KDQpgYGANCg0KDQoNCmBgYHtyfQ0KDQpib290X2NvcnBfcmVwIDwtIGJvb3RzdHJhcF9tb2RlbChzZW1pbnJfbW9kZWwgPSBjb3JwX3JlcF9wbHNfbW9kZWwsDQogIG5ib290ID0gMTAwMCwNCiAgY29yZXMgPSBOVUxMLA0KICBzZWVkID0gMTIzKQ0KIyMgQm9vdHN0cmFwcGluZyBtb2RlbCB1c2luZyBzZW1pbnIuLi4NCiMjIFNFTWluUiBNb2RlbCBzdWNjZXNzZnVsbHkgYm9vdHN0cmFwcGVkDQoNCnN1bV9ib290X2NvcnBfcmVwIDwtIHN1bW1hcnkoYm9vdF9jb3JwX3JlcCkNCg0Kc3VtX2Jvb3RfY29ycF9yZXAkYm9vdHN0cmFwcGVkX3BhdGhzDQoNCmBgYA0KDQoNCmBgYHtyfQ0KDQpzcGVjaWZpY19lZmZlY3Rfc2lnbmlmaWNhbmNlKGJvb3Rfc2VtaW5yX21vZGVsID0gYm9vdF9jb3JwX3JlcCwgDQogIGZyb20gPSAiTU9UIiwgDQogIHRocm91Z2ggPSBjKCJMSyIsICJESyIpLCANCiAgdG8gPSAiS0siLCANCiAgYWxwaGEgPSAwLjA1KQ0KDQpgYGANCg0KDQpgYGB7cn0NCg0Kc3BlY2lmaWNfZWZmZWN0X3NpZ25pZmljYW5jZShib290X3NlbWlucl9tb2RlbCA9IGJvb3RfY29ycF9yZXAsIA0KICBmcm9tID0gIk1PVCIsIA0KICB0aHJvdWdoID0gYyggIkRLIiksIA0KICB0byA9ICJLSyIsIA0KICBhbHBoYSA9IDAuMDUpDQoNCmBgYA0KDQoNCg0KDQpgYGB7cn0NCg0Kc3VtbWFyeV9jb3JwX3JlcCR2YWxpZGl0eSRmbF9jcml0ZXJpYQ0KDQpgYGANCg0KDQoNCg0KDQoNCg0KDQoNCg0KYGBge3J9DQpzdW1tYXJ5X2NvcnBfcmVwJHZhbGlkaXR5JGh0bXQNCg0KDQpgYGANCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0K</div>
 
 
 
