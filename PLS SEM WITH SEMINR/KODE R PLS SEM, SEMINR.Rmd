@@ -3,16 +3,216 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
 ```{r}
-plot(cars)
+
+list.files()
+
+
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+```{r}
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+library(readxl)
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+dat <- read_excel("contoh data.xlsx")
+
+
+dat <- as.data.frame(dat)
+
+dat
+                     
+                     
+```
+
+
+
+```{r}
+library(seminr)
+corp_rep_mm <- constructs(
+    composite("MOT", multi_items("MOT", 1:3)),
+      composite("LK", multi_items("LK", 1:4)),
+  composite("DK", multi_items("DK", 1:3)),
+  composite("KK", multi_items("KK", 1:4)))
+
+```
+
+
+
+```{r}
+
+corp_rep_sm <- relationships(
+  paths(from = c("MOT"), to = c("DK")),
+  paths(from = c("MOT"), to = c("KK")),
+  paths(from = c("LK"), to = c("DK")),
+  paths(from = c("LK"), to = c("KK")),
+    paths(from = c("MOT"), to = c("LK")),
+  paths(from = c("DK"), to = c("KK"))
+  
+  
+  
+  )
+
+```
+
+
+
+
+
+```{r}
+corp_rep_pls_model <- estimate_pls(data = dat,
+  measurement_model = corp_rep_mm,
+  structural_model  = corp_rep_sm,
+  inner_weights = path_weighting,
+  missing = mean_replacement)
+
+
+```
+
+
+
+
+
+
+
+
+```{r}
+
+summary_corp_rep <- summary(corp_rep_pls_model)
+
+
+summary_corp_rep$paths
+
+```
+
+
+
+
+```{r}
+
+summary_corp_rep$reliability
+
+```
+
+
+
+
+```{r}
+
+plot(summary_corp_rep$reliability)
+
+```
+
+
+
+
+
+```{r}
+
+summary_corp_rep$descriptives$statistics$items
+
+```
+
+
+
+
+```{r}
+
+summary_corp_rep$descriptives$statistics$constructs
+
+```
+
+
+
+
+```{r}
+
+summary_corp_rep$loadings
+
+```
+
+
+
+```{r}
+
+boot_corp_rep <- bootstrap_model(seminr_model = corp_rep_pls_model,
+  nboot = 1000,
+  cores = NULL,
+  seed = 123)
+## Bootstrapping model using seminr...
+## SEMinR Model successfully bootstrapped
+
+sum_boot_corp_rep <- summary(boot_corp_rep)
+
+sum_boot_corp_rep$bootstrapped_paths
+
+```
+
+
+```{r}
+
+specific_effect_significance(boot_seminr_model = boot_corp_rep, 
+  from = "MOT", 
+  through = c("LK", "DK"), 
+  to = "KK", 
+  alpha = 0.05)
+
+```
+
+
+```{r}
+
+specific_effect_significance(boot_seminr_model = boot_corp_rep, 
+  from = "MOT", 
+  through = c( "DK"), 
+  to = "KK", 
+  alpha = 0.05)
+
+```
+
+
+
+
+```{r}
+
+summary_corp_rep$validity$fl_criteria
+
+```
+
+
+
+
+
+
+
+
+
+
+```{r}
+summary_corp_rep$validity$htmt
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
